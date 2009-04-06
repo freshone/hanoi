@@ -1,6 +1,6 @@
 ################################################################################
 # Tower of Hanoi Problem
-# Ruby Learning Excersize
+# Ruby Learning Exercize
 #
 # by Jeremy D. McCarthy
 # 2009/04/05
@@ -24,7 +24,7 @@ class Hanoi
 	def process(num = @a.length, from = @a, dest = @c, remain = @b)
 		if(num == 1)
 			dest.push(from.pop)
-			system("clear")
+			system("clear") # linux specific
 			@count += 1
 			printPegs()
 			sleep(1)
